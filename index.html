@@ -19,13 +19,31 @@
         <input type="tel" name="" id="fone"> <br>
         <label for="dn">Data de Nascimento</label>
         <input type="date" name="" id="dn"> <br>
-        <label for="curso">Área de Interesse</label>
+        <p>Você faz parte da obra shalom?</p>
+        <label for="obraS">Sim</label>
+        <input type="radio" name="obra" id="obraS">
+        <label for="obraN">Não</label>
+        <input type="radio" name="obra" id="obraN"> <br><br>
+        <label for="curso">Escolha seu curso</label>
         <select name="curso" id="curso" required>
             <option value="">Escolha seu curso</option>
             <option value="liderança">Liderança</option>
             <option value="vocacao">Vocacional</option>
-            <option value="familia">Familia</option>
+            <option value="familia">Familia</option> <br>
         </select>
+        <br>
+        <label for="">Pensar em pergunta multipla</label>
+        <input type="checkbox" name="" id="">
+        <datalist>
+            <option value="op 1"></option>
+            <option value="op 2"></option>
+            <option value="op 3"></option>
+        </datalist> <br>
+        <label for="objetivo">Qual a sua motivação para fazer o curso?</label><br>
+        <textarea name="objetivo" id="objtivo"></textarea>
+        <br><br>
+        <button type="submit">Me inscrever</button>
+        <button type="reset">Limpar Formulário</button>
     </form>
 </body>
 </html>
