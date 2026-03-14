@@ -12,11 +12,11 @@
     </header>
     <form action="">
         <label for="nome">Nome Completo</label>
-        <input type="text" name="" id="nome"> <br>
+        <input type="text" name="" id="nome" placeholder="Seu nome completo" required> <br>
         <label for="email">E-mail</label>
-        <input type="email" name="" id="email"> <br>
+        <input type="email" name="" id="email" required> <br>
         <label for="fone">Telefone</label>
-        <input type="tel" name="" id="fone"> <br>
+        <input type="tel" name="" id="fone" pattern="[0-9] {10,,11}"> <br>
         <label for="dn">Data de Nascimento</label>
         <input type="date" name="" id="dn"> <br>
         <p>Você faz parte da obra shalom?</p>
@@ -32,17 +32,21 @@
             <option value="familia">Familia</option> <br>
         </select>
         <br>
-        <label for="">Pensar em pergunta multipla</label>
-        <input type="checkbox" name="" id="">
-        <datalist>
-            <option value="op 1"></option>
-            <option value="op 2"></option>
-            <option value="op 3"></option>
+        <label for="material"> Quero receber o material das palestras.
+            <input type="checkbox" name="material" id="material" value="sim"><br>
+        <label for="dia">Quais seus dias dispovéis</label>
+        <input id="dia" name="dia" list="lista-dias" placeholder="Digite e escolha">
+        <datalist id="lista-dias">
+            <option value="">Domingo</option>
+            <option value="">Segunda</option>
+            <option value="">Terça</option>
         </datalist> <br>
         <label for="objetivo">Qual a sua motivação para fazer o curso?</label><br>
-        <textarea name="objetivo" id="objtivo"></textarea>
+        <textarea name="objetivo" id="objtivo" rows="4" cols="40" maxlength="500"></textarea><br>
+        <label for="expectativa">Qual o seu nivel de expectativa para o evento de 0 a 10(sendo 0 minima e 10 muito alta)? </label>
+        <input type="number" name="" id="expectativa" min="0" max="10">
         <br><br>
-        <button type="submit">Me inscrever</button>
+        <button type="submit">Finalizar inscrição</button>
         <button type="reset">Limpar Formulário</button>
     </form>
 </body>
